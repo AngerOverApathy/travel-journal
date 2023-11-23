@@ -1,19 +1,19 @@
-import locationIcon from '../../../public/location.png'
+import locationIcon from '../../assets/img/location.png'
 
 
-export default function Cards() {
+export default function Cards(props) {
     return (
         <div className="card-container">
-            <img />
+            <img src={props.imageUrl} className='thumbnail' alt='cover image'/>
             <div className='card-info'>
-                <div className=''>
+                <div className='base-info'>
                     <img src={locationIcon} alt="location icon" />
-                    <p>Location</p>
-                    <h3>Landmark</h3>
-                    <p>View on Google Maps</p>
+                    <p className='location'>{props.location}</p>
+                    <h3 className='attraction'>{props.title}</h3>
+                    <p className='maps'>{props.googleMapsUrl}</p>
                 </div>
-                <p>Dates</p>
-                <p>Information</p>
+                <p className='dates'>{props.startDate} - {props.endDate}</p>
+                <p>{props.description}</p>
             </div>
         </div>
     )

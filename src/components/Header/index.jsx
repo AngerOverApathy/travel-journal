@@ -1,4 +1,4 @@
-import worldIcon from '../../../public/worldIcon.png'
+import worldIcon from '../../assets/img/worldIcon.png'
 
 export default function Header() {
     return (
