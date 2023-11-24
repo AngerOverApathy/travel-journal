@@ -78,9 +78,13 @@ body {
 }
 
 .location {
-  margin-right: 5px;  
+  margin-right: 5px; 
+  font-size: 10px; 
+  letter-spacing: 1.741px;
 }
 
 .maps {
   text-decoration: none;
+  font-size: 10px; 
+  color: #918E9B;
 }

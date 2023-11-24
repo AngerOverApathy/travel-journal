@@ -8,7 +8,7 @@ export default function Cards(props) {
             <div className='card-info'>
                 <div className='base-info'>
                     <img src={locationIcon} className='location-icon' alt="location icon" />
-                    <p className='location'>{props.location}</p>
+                    <span className='location'>{props.location.toUpperCase()}</span>
                     <a href={props.googleMapsUrl} className='maps'>View on Google Maps</a>
                 </div>
                 <h3 className='title'>{props.title}</h3>
